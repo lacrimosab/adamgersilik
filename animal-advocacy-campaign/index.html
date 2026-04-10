@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="kz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Kazakhstan animal advocacy campaign landing page." />
+    <link rel="icon" type="image/svg+xml" href="public/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Adamgersilik</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-row">
+        <a href="#main" class="brand">
+          <img src="assets/logo.png" alt="Adamgersilik logo" class="brand-logo" />
+        </a>
+        <nav aria-label="Main navigation" class="main-nav">
+          <ul class="nav-list">
+            <li><a href="#main" data-i18n="nav_main">Басты</a></li>
+            <li><a href="#news" data-i18n="nav_news">Жаңалықтар</a></li>
+            <li><a href="#stories" data-i18n="nav_stories">Оқиғалар</a></li>
+            <li><a href="#law" data-i18n="nav_law">Заң</a></li>
+            <li><a href="#team" data-i18n="nav_team">Команда</a></li>
+            <li><a href="#contacts" data-i18n="nav_contacts">Байланыс</a></li>
+          </ul>
+        </nav>
+        <div class="lang-switcher" aria-label="Language switcher">
+          <button type="button" data-lang="kz" class="lang-btn active">KZ</button>
+          <button type="button" data-lang="ru" class="lang-btn">RU</button>
+          <button type="button" data-lang="en" class="lang-btn">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="main" class="hero reveal is-visible">
+        <div class="hero-media">
+          <video autoplay muted loop playsinline preload="metadata">
+            <source src="https://assets.mixkit.co/videos/1478/1478-720.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="container hero-text">
+          <h1 data-i18n="hero_title">Жануарларға әділет — күштірек заңнан басталады.</h1>
+          <p data-i18n="hero_desc">
+            Біз жануарларға жасалған зорлыққа лайықты жаза болуын және заңның нақты орындалуын
+            қолдаймыз.
+          </p>
+          <a class="button" href="#news" data-i18n="hero_cta">Жаңалықтарды оқу</a>
+        </div>
+      </section>
+
+      <section id="news" class="section section-light reveal">
+        <div class="container narrow">
+          <h2 data-i18n="problem_title">Қоғамды алаңдатқан жағдайлар</h2>
+          <p data-i18n="problem_intro">
+            Төмендегі материалдар макет үшін берілген. Кейін тексерілген деректермен толықтырылады.
+          </p>
+        </div>
+        <div class="container">
+          <div class="grid three-col">
+            <article class="card reveal">
+              <img src="https://picsum.photos/seed/kznews1/640/400.jpg" alt="News placeholder" />
+              <div class="card-body">
+                <h3 data-i18n="news_1_title">Жануарға қатыгездік туралы мысал жаңалық</h3>
+                <p class="meta" data-i18n="news_1_meta">Ұлттық БАҚ · 00.00.0000</p>
+                <p data-i18n="news_1_desc">Қысқа сипаттама орны. Кейін нақты дерек қосылады.</p>
+              </div>
+            </article>
+            <article class="card reveal">
+              <img src="https://picsum.photos/seed/kznews2/640/400.jpg" alt="News placeholder" />
+              <div class="card-body">
+                <h3 data-i18n="news_2_title">Екінші мысал жаңалық</h3>
+                <p class="meta" data-i18n="news_2_meta">Аймақтық басылым · 00.00.0000</p>
+                <p data-i18n="news_2_desc">Тағы бір қысқа сипаттама. Кейін шынайы ақпаратпен ауыстырылады.</p>
+              </div>
+            </article>
+            <article class="card reveal">
+              <img src="https://picsum.photos/seed/kznews3/640/400.jpg" alt="News placeholder" />
+              <div class="card-body">
+                <h3 data-i18n="news_3_title">Үшінші мысал жаңалық</h3>
+                <p class="meta" data-i18n="news_3_meta">Онлайн басылым · 00.00.0000</p>
+                <p data-i18n="news_3_desc">Бұл бөлім құрылым үшін тұр. Кейін тексерілген мазмұн болады.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="stories" class="section section-tinted reveal">
+        <div class="container">
+          <h2 data-i18n="stories_title">Біздің команданың жеке оқиғалары</h2>
+          <p class="section-intro" data-i18n="stories_intro">
+            Кампанияға не үшін қосылғанымызды қысқа әрі шынайы түрде бөлісеміз.
+          </p>
+          <div class="grid two-col stories-grid">
+            <article class="card story-card reveal">
+              <img src="https://picsum.photos/seed/teamstory1/900/620.jpg" alt="Team story photo" />
+              <div class="card-body">
+                <h3 data-i18n="story_1_name">Айгерім, ерікті</h3>
+                <p data-i18n="story_1_text">
+                  Бірнеше жыл бұрын ауламыздағы күшіктің жарақат алғанын көріп, жануарларды қорғау
+                  тақырыбына тұрақты араласа бастадым. Бұл кампанияда менің мақсатым - заңның
+                  қағазда емес, өмірде жұмыс істеуіне үлес қосу.
+                </p>
+              </div>
+            </article>
+            <article class="card story-card reveal">
+              <img src="https://picsum.photos/seed/teamstory2/900/620.jpg" alt="Team story photo" />
+              <div class="card-body">
+                <h3 data-i18n="story_2_name">Ержан, зерттеу тобы</h3>
+                <p data-i18n="story_2_text">
+                  Мен үшін бұл бастама - балаларға мейірім мәдениетін көрсету жолы. Жануарларға
+                  қатыгездікке бейжай қарамау қоғамдағы жауапкершілік деңгейін арттырады деп
+                  сенемін.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="law" class="section section-light reveal">
+        <div class="container">
+          <h2 data-i18n="law_title">Неге қазіргі жаза жеткіліксіз</h2>
+          <p class="section-intro" data-i18n="law_intro">
+            Қазақстандағы жануарларға қатыгездікке қатысты құқықтық жағдайды қысқаша салыстыру кестесі.
+          </p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th data-i18n="table_country">Ел / аймақ</th>
+                  <th data-i18n="table_fine">Айыппұл</th>
+                  <th data-i18n="table_prison">Бас бостандығынан айыру</th>
+                  <th data-i18n="table_enforcement">Қолданылуы</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th data-i18n="country_kz">Қазақстан</th>
+                  <td data-i18n="country_kz_fine">Мысал ауқым</td>
+                  <td data-i18n="country_kz_prison">Мысал мерзім</td>
+                  <td data-i18n="country_kz_enf">Мысал бағалау</td>
+                </tr>
+                <tr>
+                  <th data-i18n="country_de">Германия</th>
+                  <td data-i18n="country_de_fine">Мысал ауқым</td>
+                  <td data-i18n="country_de_prison">Мысал мерзім</td>
+                  <td data-i18n="country_de_enf">Мысал бағалау</td>
+                </tr>
+                <tr>
+                  <th data-i18n="country_uk">Ұлыбритания</th>
+                  <td data-i18n="country_uk_fine">Мысал ауқым</td>
+                  <td data-i18n="country_uk_prison">Мысал мерзім</td>
+                  <td data-i18n="country_uk_enf">Мысал бағалау</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note" data-i18n="law_note">
+            Кестедегі көрсеткіштер қазір тек макет үшін берілген. Кейін нақты деректермен жаңартылады.
+          </p>
+        </div>
+      </section>
+
+      <section id="team" class="section section-tinted reveal">
+        <div class="container">
+          <h2 data-i18n="team_title">Біздің команда</h2>
+          <p class="section-intro" data-i18n="team_intro">
+            Аты-жөндер келісімнен кейін толықтырылады. Қазір бұл блок құрылымды көрсету үшін берілген.
+          </p>
+          <div class="grid three-col">
+            <article class="card team-card reveal">
+              <img src="https://picsum.photos/seed/kzteam1/400/400.jpg" alt="Team placeholder" />
+              <div class="card-body">
+                <h3 data-i18n="team_1_name">Қатысушы аты</h3>
+                <p class="label" data-i18n="team_1_role">Кампания үйлестіруі</p>
+              </div>
+            </article>
+            <article class="card team-card reveal">
+              <img src="https://picsum.photos/seed/kzteam2/400/400.jpg" alt="Team placeholder" />
+              <div class="card-body">
+                <h3 data-i18n="team_2_name">Қатысушы аты</h3>
+                <p class="label" data-i18n="team_2_role">Құқықтық зерттеу</p>
+              </div>
+            </article>
+            <article class="card team-card reveal">
+              <img src="https://picsum.photos/seed/kzteam3/400/400.jpg" alt="Team placeholder" />
+              <div class="card-body">
+                <h3 data-i18n="team_3_name">Қатысушы аты</h3>
+                <p class="label" data-i18n="team_3_role">Коммуникация</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contacts" class="site-footer reveal">
+      <div class="container footer-inner">
+        <p class="footer-closing" data-i18n="footer_closing">
+          Жануарларды қорғайтын әділ құқықтық жүйені бірге қалыптастыра аламыз.
+        </p>
+        <p class="footer-values" data-i18n="footer_values">Құрмет · Жауапкершілік · Бірге</p>
+        <div class="footer-actions">
+          <a
+            class="footer-btn footer-btn-primary"
+            href="mailto:contact@campaign-placeholder.kz?subject=Join%20the%20campaign"
+            ><span data-i18n="cta_join">Кампанияға қосылу</span></a
+          >
+          <a
+            class="footer-btn footer-btn-secondary"
+            href="https://example.com/feedback-placeholder"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span data-i18n="cta_feedback">Пікір қалдыру</span></a
+          >
+        </div>
+        <div class="contact-details-panel">
+          <p><strong data-i18n="contact_instagram">Instagram:</strong> <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">https://www.instagram.com/</a></p>
+          <p><strong data-i18n="contact_email">Email:</strong> <a href="mailto:contact@campaign-placeholder.kz">contact@campaign-placeholder.kz</a></p>
+          <p><strong data-i18n="contact_phone">Phone:</strong> <a href="tel:+70000000000">+7 (000) 000-00-00</a></p>
+          <p><strong data-i18n="contact_city">City:</strong> <span data-i18n="city_value">Almaty, Kazakhstan</span></p>
+        </div>
+        <p class="footer-small" data-i18n="footer_rights">Placeholder © campaign name. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
