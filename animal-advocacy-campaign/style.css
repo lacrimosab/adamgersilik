@@ -581,10 +581,9 @@ th {
   font-size: 0.9rem;
 }
 
-#team .grid.three-col:last-of-type {
-  justify-content: center;
-}
 
-#team .grid.three-col:last-of-type article:last-child {
-  grid-column: 2 / 3;
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
