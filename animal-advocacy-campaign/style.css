@@ -35,7 +35,6 @@ html {
 #main,
 #news,
 #stories,
-#law,
 #team,
 #contacts {
   scroll-margin-top: var(--header-offset);
@@ -550,6 +549,10 @@ th {
   overflow: hidden;
   transition: max-height 0.5s ease-in-out;
   position: relative;
+}
+
+.expandable-wrapper p {
+  white-space: pre-line;
 }
 
 .expandable-wrapper::after {

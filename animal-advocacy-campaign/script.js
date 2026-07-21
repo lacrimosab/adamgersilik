@@ -4,7 +4,6 @@ const translations = {
     nav_main: "Басты",
     nav_news: "Жаңалықтар",
     nav_stories: "Оқиғалар",
-    nav_law: "Заң",
     nav_team: "Команда",
     nav_contacts: "Байланыс",
     hero_title: "Жануарларды қорға, aдамгершілікті сақта.",
@@ -44,35 +43,44 @@ const translations = {
     news_6_desc: "Жануарларды ұрып-соғу, атып өлтіру және оларға жасалатын қатыгездік туралы оқиғалар Қазақстандағы жаңалықтар мен әлеуметтік желілерде жиі көріне бастады. Сонымен қатар тағы бір қорқыныш өсіп келеді — мұндай көріністерді күн сайын көріп жүрген балалар үшін ата-аналардың алаңдаушылығы.\n" +
         "Пайдаланушылар балалық шақта зорлықты қалыпты нәрсе ретінде көрген бала қатыгездікті “қорқынышты нәрсе” ретінде қабылдауды тоқтатады деп жазады.\n" +
         "Сондықтан қаңғыбас жануарлар мәселесі және оларға деген қарым-қатынас бүгінде көптеген қазақстандықтар үшін жай ғана жаңалық емес, олардың балалары қандай қоғамда өсетіні туралы сұраққа айналып отыр.",
-    law_title: "Неге қазіргі жаза жеткіліксіз",
-    law_intro:
-      "Қазақстандағы жануарларға қатыгездікке қатысты құқықтық жағдайды қысқаша салыстыру кестесі.",
-    table_country: "Ел / аймақ",
-    table_fine: "Айыппұл",
-    table_prison: "Бас бостандығынан айыру",
-    table_enforcement: "Қолданылуы",
-    country_kz: "Қазақстан",
-    country_kz_fine: "Мысал ауқым",
-    country_kz_prison: "Мысал мерзім",
-    country_kz_enf: "Мысал бағалау",
-    country_de: "Германия",
-    country_de_fine: "Мысал ауқым",
-    country_de_prison: "Мысал мерзім",
-    country_de_enf: "Мысал бағалау",
-    country_uk: "Ұлыбритания",
-    country_uk_fine: "Мысал ауқым",
-    country_uk_prison: "Мысал мерзім",
-    country_uk_enf: "Мысал бағалау",
-    law_note: "Кестедегі көрсеткіштер қазір тек макет үшін берілген. Кейін нақты деректермен жаңартылады.",
     team_title: "Біздің команда",
     stories_title: "Біздің команданың жеке оқиғалары",
     stories_intro: "Кампанияға не үшін қосылғанымызды қысқа әрі шынайы түрде бөлісеміз.",
-    story_1_name: "Айгерім, ерікті",
+    story_1_name: "Мәриямның оқиғасы",
     story_1_text:
-      "Бірнеше жыл бұрын ауламыздағы күшіктің жарақат алғанын көріп, жануарларды қорғау тақырыбына тұрақты араласа бастадым. Бұл кампанияда менің мақсатым - заңның қағазда емес, өмірде жұмыс істеуіне үлес қосу.",
-    story_2_name: "Ержан, зерттеу тобы",
+      "2025 жылдың 25 қарашасында, таңғы сағат 10 шамасында Асқар Тоқпанов ауылында (Алматы облысы) бір отбасының өмірін төңкерген қорқынышты оқиға орын алды.\n" +
+      "Екі бала, 9 жасар қыз және 7 жасар бала, көршісінің итін және қаңғыбас итті атқанын өз көздерімен көрді. Қан, жануарлардың өліп бара жатқан толғағы және мылтықпен оқ атқан адам. Балалар үйге асығыс жүгіріп кірді. Қызы үрейленіп, дірілдей бастады, ал кіші ұлы оқиғадан кейін бір апта бойы ұйықтамады. Ол көзін жұмып, тағы да қанды иттерді және мылтық ұстаған адамды көрді.\n" +
+      "Балаларға қазір не болып жатыр?\n" +
+      "Анасы Мәриям психологтардан көмек сұрады. Жеке маман екі бала үшін де 240 000 теңге сұрады, бірақ отбасының оған шамасы жетпеді. Ақырында, олар мектеп психологына жүгінуге мәжбүр болды. Міне, ұлымның (7 жаста) психологиялық есебінен үзінділер:\n" +
+      "✔️ Ұйқының бұзылуы (ұйықтай алмадым, түнде ояндым)\n" +
+      "✔️ Көзді жұмған кездегі мазасыздық тудыратын бейнелер\n" +
+      "✔️ Мазасыздықтың, қорқыныштың, эмоционалдық тұрақсыздықтың жоғарылауы\n" +
+      "✔️ Тыныштандыратын дәрілер қажет болды\n" +
+      "Диагноз: жарақаттық оқиғаға жедел стресстік реакция. Психологиялық зиян келтірді.\n" +
+      "Менің қызым (9 жаста) да оқиғадан кейін қатты қорқыныш пен жылауға дейін аяушылық сезінді. Қызым жануарларды жақсы көреді, енді оның психикасы біржола зақымдалған.\n" +
+      "Ит пен атушыға не болды?\n" +
+      "▪️ Жануарлар мүгедек болды (бір ит, бәлкім, қаңғыбас болған, екіншісі олардың отбасылық иті болған).\n" +
+      "▪️ Шығындар өтелмеді.\n" +
+      "▪️ Олар сотқа дейінгі шағым түсірді, бірақ қаржылық мүмкіндіктері болмағандықтан сотқа бармауды шешті.\n" +
+      "▪️ Іс ЖАБЫЛДЫ. Атушы жазаланбады.\n" +
+      "Маңызды факт: Атушының тұзаққа ешқандай қатысы болған жоқ. Ол жай ғана қаруы бар рұқсатсыз көрші еді.\n" +
+      "Ананың ұстанымы:\n" +
+      "Мариям иттерді тұзаққа түсіру орталығында бес күн ұсталғаннан кейін өлтіру туралы заңға қарсы. Ол: «Жануарларды жою - қатыгездік және феодализмге оралу. Менің балаларым жануарларды жақсы көреді; олар жеті қаңғыбас итті құтқарып қалды», - дейді.\n" +
+      "Отбасы мемлекеттен не қалайды?\n" +
+      "Тек өтемақы ғана емес. Олар балаларына адамгершілікпен қарауды, қорғауды және әділеттілікті қалайды. Олар атқан адамның жазалануын қалайды. Олар жарақат алған балалардың қорқынышты түстерімен бетпе-бет келу үшін жалғыз қалмауын қалайды.\n" +
+      "Қосымша:\n" +
+      "Tengrinews пен Qumash сайттарында мақалалар жарияланды, ал танымал спортшылар жағдайды қайта жариялады. Бірақ әлі әділеттілік жоқ. Егер сізде сұрақтар туындаса немесе біз қалай көмектесе аламыз, жазыңыз.\n" +
+      "Үнсіз қалмаңыз. Бұл кез келген адамның басына түсуі мүмкін.",
+    story_2_name: "Марияның оқиғасы",
     story_2_text:
-      "Мен үшін бұл бастама - балаларға мейірім мәдениетін көрсету жолы. Жануарларға қатыгездікке бейжай қарамау қоғамдағы жауапкершілік деңгейін арттырады деп сенемін.",
+      "Бұл оқиға 2020 жылы Астанада болған. Марияның баласы небәрі 4 жаста еді.\n" +
+      "Аулада бұралқы ит өмір сүрген; ол ешқашан ешкімді мазаламаған. Бір жаз күні аулаға «Әкімдік» деген жазуы бар көлік кіріп кетті. Екі ер адам итті тұрғын үйлер мен көшеде ойнап жүрген балалардың арасынан қуа бастады.\n" +
+      "Ит балалардың көзінше атып өлтірілді.\n" +
+      "Мария мұның бәрін үшінші қабаттағы терезеден бақылап тұрды. Ит ауырсынудан қатты ыңырсып, дыбысты тіпті үйде де естуге болатындай етіп шығарды. Жануардың айқайын естіген Марияның кішкентай ұлы терезеге жүгіріп барып, қанды иттің үреймен аулада жүгіріп, кіреберісте тығылып, қанды із қалдырып жатқанын көрді.\n" +
+      "Оқиғадан кейін бала анасынан ұзақ уақыт сұрады:\n" +
+      "«Олар неге оған бұлай істеді?..»\n" +
+      "Мария фотосуреттерді, бейнелерді және көліктің нөмірін жинап, арыз жазды. Бірақ іс тіпті қарастырылмады. Мұндай әңгімелер тек жануарларға ғана емес, балалардың психикасына да із қалдырады.\n" +
+      "Үнсіз қалмаңыз.",
     footer_closing: "Жануарларды қорғайтын әділ құқықтық жүйені бірге қалыптастыра аламыз.",
     footer_values: "Құрмет · Жауапкершілік · Бірге",
     contact_instagram: "Instagram:",
@@ -122,7 +130,6 @@ const translations = {
     nav_main: "Главная",
     nav_news: "Новости",
     nav_stories: "Истории",
-    nav_law: "Закон",
     nav_team: "Команда",
     nav_contacts: "Контакты",
     hero_title: "Защищая животных — сохраняешь человечность.",
@@ -162,34 +169,47 @@ const translations = {
     news_6_desc: "Истории об избиениях, отстрелах и издевательствах над животными всё чаще появляются в новостях и соцсетях Казахстана. Но вместе с этим растёт и другой страх — страх родителей за то, что подобные сцены ежедневно видят дети.\n" +
         "Пользователи пишут, что ребёнок, который в детстве видит насилие как норму, перестаёт воспринимать жестокость как что-то страшное.\n" +
         "Именно поэтому темы бездомных животных и обращения с ними сегодня стали для многих казахстанцев не просто новостями, а вопросом того, в каком обществе будут расти их дети.",
-    law_title: "Почему текущего наказания недостаточно",
-    law_intro: "Краткая сравнительная таблица по правовому регулированию жестокого обращения с животными.",
-    table_country: "Страна / регион",
-    table_fine: "Штраф",
-    table_prison: "Лишение свободы",
-    table_enforcement: "Применение",
-    country_kz: "Казахстан",
-    country_kz_fine: "Пример диапазона",
-    country_kz_prison: "Пример срока",
-    country_kz_enf: "Пример оценки",
-    country_de: "Германия",
-    country_de_fine: "Пример диапазона",
-    country_de_prison: "Пример срока",
-    country_de_enf: "Пример оценки",
-    country_uk: "Великобритания",
-    country_uk_fine: "Пример диапазона",
-    country_uk_prison: "Пример срока",
-    country_uk_enf: "Пример оценки",
-    law_note: "Показатели в таблице сейчас служат только для макета и будут обновлены позже.",
     team_title: "Наша команда",
     stories_title: "Личные истории нашей команды",
     stories_intro: "Коротко и искренне делимся, почему мы участвуем в этой кампании.",
-    story_1_name: "Айгерим, волонтер",
+    story_1_name: "История Марьям",
     story_1_text:
-      "Несколько лет назад я увидела травмированного щенка во дворе и с тех пор постоянно участвую в защите животных. В этой кампании я хочу помочь тому, чтобы закон работал не только на бумаге.",
-    story_2_name: "Ержан, исследовательская группа",
+      "25 ноября 2025 года около 10 утра в селе Аскар Токпанов (Алматинская область) произошел кошмар, который перевернул жизнь одной семьи.\n" +
+      "Двое детей, девочка 9 лет и мальчик 7 лет, своими глазами видели, как сосед стрелял в их собаку и в уличного пса. Кровь, предсмертные муки животных, стрелок с ружьем. Дети забежали в дом в истерике. У дочери началась паника, ее трясло, а младший сын не спал неделю после случившегося. Он закрывал глаза и снова видел окровавленных псов и человека с ружьём.\n" +
+      "Что с детьми сейчас?\n" +
+      "Мама, Марьям, обратилась к психологам. Платный специалист запросил 240 000 тенге за двоих детей, однако семья не смогла себе этого позволить. В итоге пришлось обратиться к школьному психологу.\n" +
+      "Вот строчки из психологического заключения на сына (7 лет):\n" +
+      "✔️ Нарушения сна (не мог заснуть, просыпался ночами)\n" +
+      "✔️ Навязчивые тревожные образы при закрывании глаз\n" +
+      "✔️ Повышенная тревожность, страх, эмоциональная неустойчивость\n" +
+      "✔️ Потребовались успокаивающие средства\n" +
+      "Диагноз: острая стрессовая реакция на психотравмирующее событие. Причинен вред психологическому здоровью.\n" +
+      "Дочь (9 лет) после случившегося также испытала сильный страх и жалость до слёз. Девочка любит животных, а теперь её психика травмирована надолго.\n" +
+      "Что с собакой и стрелком?\n" +
+      "▪️ Животные - инвалиды (один пёс, скорее всего, был бездомным, второй - их семейная собака).\n" +
+      "▪️ Ущерб не компенсирован.\n" +
+      "▪️ Досудебную претензию написали, но в суд не пошли так как нет финансовой возможности.\n" +
+      "▪️ Дело ЗАКРЫЛИ. Стрелок НЕ НАКАЗАН.\n" +
+      "Важный факт: Стрелок не имеет отношения к отлову. Это был просто самовольный сосед с ружьем.\n" +
+      "Позиция мамы:\n" +
+      "Марьям против законопроекта об уничтожении собак за 5 дней содержания в отлове. Она говорит: «Уничтожение животных - это варварство и возвращение в феодализм. Мои дети любят зверей, они спасли уже 7 бездомных собак».\n" +
+      "Что семья хочет от государства?\n" +
+      "Не просто компенсацию. Они хотят, чтобы их дети получили человеческое отношение, защиту и справедливость. Чтобы стрелок понёс наказание. Чтобы травмированных детей не оставляли наедине с кошмаром.\n" +
+      "P.S.\n" +
+      "В Тengrinews, Qumash выходили статьи, ситуацию репостили известные спортсмены. Но справедливости пока нет. Если у вас есть вопросы или чем помочь - пишите.\n" +
+      "Не молчите. Это может случиться с каждым из вас.",
+    story_2_name: "История от лица Марии",
     story_2_text:
-      "Для меня эта инициатива - способ показывать детям культуру сострадания. Безразличие к жестокости к животным снижает уровень общей ответственности в обществе.",
+      "История от лица Марии:\n" +
+      "Это произошло в Астане в 2020 году. Ребёнку было всего 4 года.\n" +
+      "Во дворе жила бездомная собака, которая никогда никого не трогала. В один летний день во двор заехала машина с надписью «Акимат». Двое мужчин начали гнаться за собакой прямо среди жилых домов и детей, игравших на улице.\n" +
+      "На глазах у ДЕТЕЙ в собаку выстрелили.\n" +
+      "Мария наблюдала всё это из окна 3 этажа. От боли собака скулила так громко, что звук был слышен даже дома. Услышав крики животного, ее маленький сын подбежал к окну и увидел, как окровавленная собака в панике носится по двору и пытается спрятаться в подъезде, оставляя за собой кровавые следы.\n" +
+      "После случившегося ребенок долго спрашивал у матери:\n" +
+      "«Почему с ней так поступили?..»\n" +
+      "Мария собрала фото, видео и номер машины, написала заявление. Но дело даже не стали рассматривать.\n" +
+      "Такие истории оставляют след не только на животных, но и на детской психике.\n" +
+      "Не молчите.",
     footer_closing: "Вместе мы можем сформировать справедливую правовую систему защиты животных.",
     footer_values: "Уважение · Ответственность · Вместе",
     contact_instagram: "Instagram:",
@@ -239,7 +259,6 @@ const translations = {
     nav_main: "Main",
     nav_news: "News",
     nav_stories: "Stories",
-    nav_law: "Law",
     nav_team: "Team",
     nav_contacts: "Contacts",
     hero_title: "Protect animals, preserve humanity.",
@@ -279,34 +298,61 @@ const translations = {
     news_6_desc: " Stories of beatings, shootings, and abuse of animals are increasingly appearing in news and social media in Kazakhstan. Along with this, another fear is also growing — parents’ fear that children are witnessing such scenes every day.\n" +
         "Users write that a child who sees violence as normal in childhood stops perceiving cruelty as something страшful.\n" +
         "That is why issues of stray animals and how they are treated have become for many Kazakhstanis not just news, but a question of what kind of society their children will grow up in.",
-    law_title: "Why current punishment is not enough",
-    law_intro: "A short comparison table about legal responses to animal cruelty.",
-    table_country: "Country / region",
-    table_fine: "Fine",
-    table_prison: "Custodial term",
-    table_enforcement: "Enforcement",
-    country_kz: "Kazakhstan",
-    country_kz_fine: "Placeholder range",
-    country_kz_prison: "Placeholder term",
-    country_kz_enf: "Placeholder assessment",
-    country_de: "Germany",
-    country_de_fine: "Placeholder range",
-    country_de_prison: "Placeholder term",
-    country_de_enf: "Placeholder assessment",
-    country_uk: "United Kingdom",
-    country_uk_fine: "Placeholder range",
-    country_uk_prison: "Placeholder term",
-    country_uk_enf: "Placeholder assessment",
-    law_note: "Values in this table are placeholders for layout and will be replaced later.",
     team_title: "Our team",
     stories_title: "Personal stories from our team",
     stories_intro: "We share short and sincere reasons why we joined this campaign.",
-    story_1_name: "Aigerim, volunteer",
+    story_1_name: "Maryam's Story",
     story_1_text:
-      "A few years ago I saw an injured puppy in our yard, and that moment pushed me to stay involved in animal protection. In this campaign, I want to help make sure the law works in real life, not only on paper.",
-    story_2_name: "Erzhan, research team",
+      "On November 25, 2025, at around 10:00 a.m., in the village of Askar Tokpanov (Almaty Region), a nightmare unfolded that changed one family's life forever.\n\n" +
+      "Two children—a 9-year-old girl and a 7-year-old boy—watched with their own eyes as their neighbor shot their family dog and a stray dog.\n\n" +
+      "Blood. The animals' final agony. A man with a shotgun.\n\n" +
+      "The children ran into the house in hysterics. Their daughter suffered a panic attack and was trembling uncontrollably. Their younger son couldn't sleep for a week after the incident. Every time he closed his eyes, he saw the bloodied dogs and the man with the gun all over again.\n\n" +
+      "What happened to the children?\n\n" +
+      "Their mother, Maryam, sought psychological help.\n\n" +
+      "A private psychologist charged 240,000 KZT for treatment for both children, but the family simply could not afford it. They had no choice but to turn to the school psychologist.\n\n" +
+      "The psychologist's report for the 7-year-old boy states:\n\n" +
+      "✔ Sleep disturbances (difficulty falling asleep and frequent night awakenings)\n" +
+      "✔ Intrusive distressing images whenever he closed his eyes\n" +
+      "✔ Severe anxiety, fear, and emotional instability\n" +
+      "✔ Sedative medication was required\n\n" +
+      "Diagnosis: Acute stress reaction caused by a traumatic event. Psychological harm was confirmed.\n\n" +
+      "The 9-year-old daughter also experienced intense fear and cried uncontrollably after witnessing the shooting. She has always loved animals, and this experience has left her with lasting psychological trauma.\n\n" +
+      "What happened to the dogs and the shooter?\n\n" +
+      "▪️ Both dogs survived but were left permanently disabled (one was most likely a stray, the other was the family's pet).\n" +
+      "▪️ The family has received no compensation for the damage.\n" +
+      "▪️ They filed a pre-trial legal claim but could not take the case to court because they lacked the financial resources.\n" +
+      "▪️ The criminal case was CLOSED. The shooter was NOT PUNISHED.\n\n" +
+      "An important fact: The shooter had nothing to do with animal control. He was simply a neighbor who took it upon himself to shoot the dogs.\n\n" +
+      "The mother's position\n\n" +
+      "Maryam opposes the proposed bill that would allow dogs to be euthanized after five days in animal shelters.\n\n" +
+      "She says:\n\n" +
+      "\"Killing animals is barbaric and a step back into feudalism. My children love animals—they have already rescued seven stray dogs.\"\n\n" +
+      "What does the family want from the government?\n\n" +
+      "Not just compensation.\n\n" +
+      "They want their children to be treated with dignity, protected, and given justice.\n\n" +
+      "They want the shooter to be held accountable.\n\n" +
+      "They want traumatized children not to be left alone to deal with such horrific experiences.\n\n" +
+      "P.S.\n\n" +
+      "This story was covered by Tengrinews and Qumash, and it was shared by well-known athletes.\n\n" +
+      "Yet justice has still not been served.\n\n" +
+      "If you have any questions or would like to help, please reach out.\n\n" +
+      "Don't stay silent. This could happen to any one of you.",
+    story_2_name: "Maria's Story",
     story_2_text:
-      "For me, this initiative is also about showing children a culture of compassion. Ignoring cruelty toward animals lowers the level of responsibility in society as a whole.",
+      "Maria's Story\n\n" +
+      "This happened in Astana in 2020. Her son was only four years old.\n\n" +
+      "A stray dog lived in their courtyard. It had never harmed anyone.\n\n" +
+      "One summer day, a vehicle marked \"Akimat\" (the local municipal administration) drove into the courtyard. Two men got out and began chasing the dog through a residential area where children were playing outside.\n\n" +
+      "Right in front of the children, they shot the dog.\n\n" +
+      "Maria watched everything from the window of her third-floor apartment.\n\n" +
+      "The dog's cries of pain were so loud that they could be heard inside the building.\n\n" +
+      "Hearing the animal screaming, her young son ran to the window and saw the wounded, blood-covered dog frantically running around the courtyard, desperately trying to hide inside an apartment entrance while leaving a trail of blood behind.\n\n" +
+      "For a long time afterward, her son kept asking:\n\n" +
+      "\"Why did they do that to her?\"\n\n" +
+      "Maria collected photographs, videos, and even the vehicle's license plate number. She filed an official complaint.\n\n" +
+      "The case was never even investigated.\n\n" +
+      "Stories like this leave lasting scars—not only on animals, but also on the minds of the children who witness them.\n\n" +
+      "Don't stay silent.",
     footer_closing: "Together we can build a fair legal system that protects animals.",
     footer_values: "Respect · Responsibility · Together",
     contact_instagram: "Instagram:",
